@@ -1,16 +1,12 @@
 package com.zintrulcre.RecipeFinder.domain;
 
-public class Ingredient {
+import com.zintrulcre.RecipeFinder.domain.Unit;
 
+public class Item {
     private String item;
     private int amount;
     private Unit unit;
-
-    public Ingredient(String item, int amount, Unit unit) {
-        this.item = item;
-        this.amount = amount;
-        this.unit = unit;
-    }
+    private String use_by;
 
     public String getItem() {
         return item;
@@ -36,12 +32,28 @@ public class Ingredient {
         this.unit = unit;
     }
 
+    public String getUse_by() {
+        return use_by;
+    }
+
+    public void setUse_by(String use_by) {
+        this.use_by = use_by;
+    }
+
+    public Item(String item, int amount, Unit unit, String use_by) {
+        this.item = item;
+        this.amount = amount;
+        this.unit = unit;
+        this.use_by = use_by;
+    }
+
     @Override
     public String toString() {
-        return "Ingredient{" +
+        return "Item{" +
                 "item='" + item + '\'' +
                 ", amount=" + amount +
                 ", unit=" + unit +
+                ", use_by='" + use_by + '\'' +
                 '}';
     }
 }

@@ -1,30 +1,25 @@
 package com.zintrulcre.RecipeFinder.config;
 
-import com.zintrulcre.RecipeFinder.domain.Recipe;
-import com.zintrulcre.RecipeFinder.repository.RecipeRepository;
+import com.zintrulcre.RecipeFinder.domain.Finder;
+import com.zintrulcre.RecipeFinder.domain.Item;
+import com.zintrulcre.RecipeFinder.repository.FinderRepository;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.reactive.function.server.*;
+import org.springframework.web.reactive.function.server.RequestPredicates;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.RouterFunctions;
+import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Flux;
 
 import java.util.Collection;
 
-/**
- * router function configuration
- */
-@Configuration
 public class RouterFunctionConfiguration {
 
-    /**
-     * request: ServletRequest or HTTPServletRequest
-     * response: ServletResponse or HTTPServletResponse
-     */
     @Bean
-    public RouterFunction<ServerResponse> FindAllRecipe(RecipeRepository recipeRepository) {
+    public RouterFunction<ServerResponse> FindAllFinder(FinderRepository finderRepository) {
         return RouterFunctions.route(RequestPredicates.GET("/recipe/all"), request -> {
-            Collection<Recipe> recipes = recipeRepository.FindAllRecipes();
-            Flux<Recipe> recipeFlux = Flux.fromIterable(recipes);
-            return ServerResponse.ok().body(recipeFlux, Recipe.class);
+            Collection<Finder> finders = finderRepository.FindAllFinders();
+            Flux<Finder> finderFlux = Flux.fromIterable(finders);
+            return ServerResponse.ok().body(finderFlux, Finder.class);
         });
     }
 }

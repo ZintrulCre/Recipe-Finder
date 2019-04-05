@@ -5,13 +5,6 @@ package com.zintrulcre.RecipeFinder.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.netty.handler.codec.json.JsonObjectDecoder;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-import org.springframework.boot.json.GsonJsonParser;
-
 public class Recipe {
     private int id;
 
