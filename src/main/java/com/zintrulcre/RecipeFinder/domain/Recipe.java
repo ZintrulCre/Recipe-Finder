@@ -8,12 +8,23 @@ import java.util.List;
 public class Recipe {
     private int id;
 
+    private enum Unit {of, grams, ml, slices}
+
     private String name;
     private ArrayList<Ingredient> ingredients;
 
-    public Recipe(String name, ArrayList<Ingredient> ingredients) {
+    public Recipe(String name, String[] ingredients) {
         this.name = name;
-        this.ingredients = ingredients;
+        this.ingredients = StringtoIngredient(ingredients);
+    }
+
+    private ArrayList<Ingredient> StringtoIngredient(String[] string) {
+        ArrayList<Ingredient> ingredients = new ArrayList<>();
+        for (String str : string) {
+            String[] elements = str.split("\n");
+            ingredients.add(new Ingredient(elements[0], Integer.parseInt(elements[1]), Unit.valueOf(elements[2])));
+        }
+        return ingredients;
     }
 
     public int getId() {
@@ -49,5 +60,50 @@ public class Recipe {
                 '}';
     }
 
+    private class Ingredient {
+
+        private String item;
+        private int amount;
+        private Unit unit;
+
+        public Ingredient(String item, int amount, Unit unit) {
+            this.item = item;
+            this.amount = amount;
+            this.unit = unit;
+        }
+
+        public String getItem() {
+            return item;
+        }
+
+        public void setItem(String item) {
+            this.item = item;
+        }
+
+        public int getAmount() {
+            return amount;
+        }
+
+        public void setAmount(int amount) {
+            this.amount = amount;
+        }
+
+        public Unit getUnit() {
+            return unit;
+        }
+
+        public void setUnit(Unit unit) {
+            this.unit = unit;
+        }
+
+        @Override
+        public String toString() {
+            return "Ingredient{" +
+                    "item='" + item + '\'' +
+                    ", amount=" + amount +
+                    ", unit=" + unit +
+                    '}';
+        }
+    }
 }
 

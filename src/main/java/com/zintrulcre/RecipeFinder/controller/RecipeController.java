@@ -1,6 +1,5 @@
 package com.zintrulcre.RecipeFinder.controller;
 
-import com.zintrulcre.RecipeFinder.domain.Ingredient;
 import com.zintrulcre.RecipeFinder.domain.Recipe;
 import com.zintrulcre.RecipeFinder.repository.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +18,8 @@ public class RecipeController {
         this.recipeRepository = recipeRepository;
     }
 
-    @PostMapping("/Recipe/save")
-    public Recipe save(@RequestParam String name, @RequestParam ArrayList<Ingredient> ingredients) {
+    @PostMapping("/recipe/save")
+    public Recipe save(@RequestParam String name, @RequestParam String[] ingredients) {
         Recipe recipe = new Recipe(name, ingredients);
         if (recipeRepository.save(recipe)) {
             System.out.printf("Save recipe %s succeed!\n", name);
