@@ -19,7 +19,7 @@ public class RecipeController {
     }
 
     @PostMapping("/recipe/save")
-    public Recipe save(@RequestParam String name, @RequestParam String[] ingredients) {
+    public Recipe save(@RequestParam String name, @RequestParam String ingredients) {
         Recipe recipe = new Recipe(name, ingredients);
         if (recipeRepository.save(recipe)) {
             System.out.printf("Save recipe %s succeed!\n", name);

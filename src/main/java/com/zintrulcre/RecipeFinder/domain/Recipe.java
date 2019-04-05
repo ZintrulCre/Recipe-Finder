@@ -13,17 +13,16 @@ public class Recipe {
     private String name;
     private ArrayList<Ingredient> ingredients;
 
-    public Recipe(String name, String[] ingredients) {
+    public Recipe(String name, String ingredients) {
         this.name = name;
         this.ingredients = StringtoIngredient(ingredients);
     }
 
-    private ArrayList<Ingredient> StringtoIngredient(String[] string) {
+    private ArrayList<Ingredient> StringtoIngredient(String string) {
         ArrayList<Ingredient> ingredients = new ArrayList<>();
-        for (String str : string) {
-            String[] elements = str.split("\n");
-            ingredients.add(new Ingredient(elements[0], Integer.parseInt(elements[1]), Unit.valueOf(elements[2])));
-        }
+        String[] elements = string.split("\n");
+        for (int i = 0; i < string.length() / 3; ++i)
+            ingredients.add(new Ingredient(elements[i * 3], Integer.parseInt(elements[i * 3 + 1]), Unit.valueOf(elements[i * 3 + 2])));
         return ingredients;
     }
 
