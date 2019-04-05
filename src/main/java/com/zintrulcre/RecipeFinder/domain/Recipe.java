@@ -20,8 +20,8 @@ public class Recipe {
 
     private ArrayList<Ingredient> StringtoIngredient(String string) {
         ArrayList<Ingredient> ingredients = new ArrayList<>();
-        String[] elements = string.split("\n");
-        for (int i = 0; i < string.length() / 3; ++i)
+        String[] elements = string.split("\\?");
+        for (int i = 0; i < elements.length / 3; ++i)
             ingredients.add(new Ingredient(elements[i * 3], Integer.parseInt(elements[i * 3 + 1]), Unit.valueOf(elements[i * 3 + 2])));
         return ingredients;
     }

@@ -22,7 +22,7 @@ public class RecipeController {
     public Recipe save(@RequestParam String name, @RequestParam String ingredients) {
         Recipe recipe = new Recipe(name, ingredients);
         if (recipeRepository.save(recipe)) {
-            System.out.printf("Save recipe %s succeed!\n", name);
+            System.out.printf("Recipe \"%s\" successfully saved!\n", name);
         }
         return recipe;
     }
