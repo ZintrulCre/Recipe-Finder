@@ -3,6 +3,7 @@ package com.zintrulcre.RecipeFinder.repository;
 import com.zintrulcre.RecipeFinder.domain.Recipe;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -23,14 +24,17 @@ public class RecipeRepository {
     /**
      * save Recipe object
      *
-     * @param recipe {@link Recipe} object
+     * @param recipes {@link Recipe} object
      * @return <code>true</code> if succeed
      * <code>false</code> if failed
      */
-    public boolean save(Recipe recipe) {
-        int id = idGenerator.incrementAndGet();
-        recipe.setId(id);
-        return repository.put(id, recipe) == null;
+    public boolean save(ArrayList<Recipe> recipes) {
+        for (Recipe recipe:recipes) {
+            int id = idGenerator.incrementAndGet();
+            recipe.setId(id);
+            repository.put(id, recipe);
+        }
+        return true;
     }
 
     public Collection<Recipe> FindAllRecipes() {

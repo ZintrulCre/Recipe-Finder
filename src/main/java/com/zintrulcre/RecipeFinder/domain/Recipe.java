@@ -5,25 +5,22 @@ package com.zintrulcre.RecipeFinder.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.netty.handler.codec.json.JsonObjectDecoder;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.springframework.boot.json.GsonJsonParser;
+
 public class Recipe {
     private int id;
-
-    private enum Unit {of, grams, ml, slices}
 
     private String name;
     private ArrayList<Ingredient> ingredients;
 
-    public Recipe(String name, String ingredients) {
+    public Recipe(String name, ArrayList<Ingredient> ingredients) {
         this.name = name;
-        this.ingredients = StringtoIngredient(ingredients);
-    }
-
-    private ArrayList<Ingredient> StringtoIngredient(String string) {
-        ArrayList<Ingredient> ingredients = new ArrayList<>();
-        String[] elements = string.split("\\?");
-        for (int i = 0; i < elements.length / 3; ++i)
-            ingredients.add(new Ingredient(elements[i * 3], Integer.parseInt(elements[i * 3 + 1]), Unit.valueOf(elements[i * 3 + 2])));
-        return ingredients;
+        this.ingredients = ingredients;
     }
 
     public int getId() {
@@ -57,52 +54,6 @@ public class Recipe {
                 ", name='" + name + '\'' +
                 ", ingredients=" + ingredients +
                 '}';
-    }
-
-    private class Ingredient {
-
-        private String item;
-        private int amount;
-        private Unit unit;
-
-        public Ingredient(String item, int amount, Unit unit) {
-            this.item = item;
-            this.amount = amount;
-            this.unit = unit;
-        }
-
-        public String getItem() {
-            return item;
-        }
-
-        public void setItem(String item) {
-            this.item = item;
-        }
-
-        public int getAmount() {
-            return amount;
-        }
-
-        public void setAmount(int amount) {
-            this.amount = amount;
-        }
-
-        public Unit getUnit() {
-            return unit;
-        }
-
-        public void setUnit(Unit unit) {
-            this.unit = unit;
-        }
-
-        @Override
-        public String toString() {
-            return "Ingredient{" +
-                    "item='" + item + '\'' +
-                    ", amount=" + amount +
-                    ", unit=" + unit +
-                    '}';
-        }
     }
 }
 
