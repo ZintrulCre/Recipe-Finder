@@ -3,6 +3,7 @@ package com.zintrulcre.RecipeFinder.repository;
 import com.zintrulcre.RecipeFinder.domain.Recipe;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -30,5 +31,9 @@ public class RecipeRepository {
         int id = idGenerator.incrementAndGet();
         recipe.setId(id);
         return repository.put(id, recipe) == null;
+    }
+
+    public Collection<Recipe> FindAllRecipes() {
+        return repository.values();
     }
 }
