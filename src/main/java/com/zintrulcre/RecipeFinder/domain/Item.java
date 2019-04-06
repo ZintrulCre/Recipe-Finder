@@ -2,11 +2,13 @@ package com.zintrulcre.RecipeFinder.domain;
 
 import com.zintrulcre.RecipeFinder.domain.Unit;
 
-public class Item {
+import java.util.Comparator;
+
+public class Item implements Comparable {
     private String item;
     private int amount;
     private Unit unit;
-    private String use_by;
+    private int year, month, day;
 
     public String getItem() {
         return item;
@@ -32,20 +34,16 @@ public class Item {
         this.unit = unit;
     }
 
-    public String getUse_by() {
-        return use_by;
-    }
-
-    public void setUse_by(String use_by) {
-        this.use_by = use_by;
-    }
-
     public Item(String item, int amount, Unit unit, String use_by) {
         this.item = item;
         this.amount = amount;
         this.unit = unit;
-        this.use_by = use_by;
+        String date[] = use_by.split("/");
+        this.year = Integer.parseInt(date[2]);
+        this.month = Integer.parseInt(date[1]);
+        this.day = Integer.parseInt(date[0]);
     }
+
 
     @Override
     public String toString() {
@@ -53,7 +51,14 @@ public class Item {
                 "item='" + item + '\'' +
                 ", amount=" + amount +
                 ", unit=" + unit +
-                ", use_by='" + use_by + '\'' +
+                ", year=" + year +
+                ", month=" + month +
+                ", day=" + day +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.year < ((Item) o).year ? -1 : (this.month < ((Item) o).month ? -1 : (this.day < ((Item) o).day ? -1 : 1));
     }
 }

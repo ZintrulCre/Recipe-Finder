@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -100,11 +102,13 @@ public class FinderRepository {
         return recipes;
     }
 
-    public boolean Save(String recipe_string, String item_strings) throws ParseException {
+    public boolean Find(String recipe_string, String item_strings) throws ParseException {
         ArrayList<Recipe> recipes = SaveRecipes(recipe_string);
         ArrayList<Item> items = SaveItems(item_strings);
+        Collections.sort(items);
         System.out.println(recipes);
         System.out.println(items);
+
         return false;
     }
 

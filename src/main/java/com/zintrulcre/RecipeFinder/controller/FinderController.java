@@ -19,16 +19,21 @@ public class FinderController {
         this.finderRepository = finderRepository;
     }
 
-    @PostMapping("/recipe/save")
+    @PostMapping("/recipe-finder/add")
     public boolean Save(@RequestBody String string) throws ParseException {
         int divide = string.indexOf("\n\n");
         String recipe_string = string.substring(0, divide + 1);
         String fridge_string = string.substring(divide + 2);
-        System.out.println(recipe_string);
-        System.out.println(fridge_string);
-        boolean recipes_saved = this.finderRepository.Save(recipe_string, fridge_string);
+//        System.out.println(recipe_string);
+//        System.out.println(fridge_string);
+        boolean saved = this.finderRepository.Find(recipe_string, fridge_string);
+        Match();
 
 //        return recipes_saved && items_saved;
         return true;
+    }
+
+    private String Match () {
+        return "";
     }
 }
