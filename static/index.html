@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Recipe Finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Recipe Finder</a>
+    </nav>
+
+    <!-- Main -->
+    <div class="main-area">
+        <div class="accordion" id="accordionExample">
+            <div class="card bg-light">
+                <div class="card-header">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button">
+                            1. Please fill in a CSV File:
+                        </button>
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <textarea id="content-items" class="form-control" rows="5" spellcheck="false"></textarea>
+                    <small class="form-text">Format: item,amount,unit,use-by.</small>
+                    <small class="form-text text-muted">
+                        e.g.<br>
+                        bread,10,slices,25/12/2019<br>
+                        cheese,10,slices,25/12/2019<br>
+                        butter,250,grams,25/12/2018<br>
+                        peanut butter,250,grams,8/2/2019<br>
+                        mixed salad,150,grams,26/12/2016<br>
+                    </small>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-header">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link">
+                            2. Please fill out your recipe JSON:
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <textarea id="content-recipes" class="form-control" rows="10" spellcheck="false"></textarea>
+                    <small class="form-text text-muted">
+                        e.g.<br>
+<pre>
+[
+    {
+    "name": "grilled cheese on toast",
+    "ingredients": [
+        { "item":"bread", "amount":"2", "unit":"slices"},
+        { "item":"cheese", "amount":"2", "unit":"slices"}
+    ]
+    },
+    {
+    "name": "salad sandwich",
+    "ingredients": [
+        { "item":"bread", "amount":"2", "unit":"slices"},
+        { "item":"mixed salad", "amount":"100", "unit":"grams"}
+    ]
+    }
+]
+</pre>
+                    </small>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="card bg-light">
+                <div class="card-header">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button">
+                            3. Result
+                        </button>
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div id="result">
+                        <span style="color: #f00">No result</span>
+                    </div>
+                </div>
+            </div>
+            <button id="submitBtn" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+    <!-- JS ============================================ -->
+    <script src="lib/js/jquery-3.3.1.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

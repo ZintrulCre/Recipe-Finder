@@ -2,19 +2,19 @@ $(document).ready(function() {
   // on submit button click
   $('#submitBtn').on('click', function() {
     // get csv & json value
-    var csvContent = $('#content-csv').val();
-    var jsonContent = $('#content-json').val();
+    var items = $('#content-items').val();
+    var recipes = $('#content-recipes').val();
 
-    console.log('CSV: ',csvContent);
-    console.log('JSON: ', jsonContent);
+    console.log('items_in_fridge:\n',items);
+    console.log('recipes:\n', recipes);
 
     // post method
     var params = {
-      csv_content: csvContent,
-      json_content: jsonContent 
+      items_in_fridge: items,
+      recipes: recipes 
     }
     $.ajax({
-      url: 'http://103.44.33.135/recipe-finder/query',
+      url: 'http://localhost:8080/recipe-finder/query',
       type: 'POST',
       data: params
     }).done( function (response) {

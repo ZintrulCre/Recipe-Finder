@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Pack {
     private ArrayList<Recipe> recipes;
+    private ArrayList<Item> items;
 
     public ArrayList<Recipe> getRecipes() {
         return recipes;
@@ -20,9 +21,6 @@ public class Pack {
     public void setItems(ArrayList<Item> items) {
         this.items = items;
     }
-
-    private ArrayList<Item> items;
-
     public Pack(ArrayList<Recipe> recipes, ArrayList<Item> items) {
         this.recipes = recipes;
         this.items = items;

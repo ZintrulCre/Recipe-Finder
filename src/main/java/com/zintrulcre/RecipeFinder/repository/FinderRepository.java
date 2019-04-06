@@ -92,6 +92,7 @@ public class FinderRepository {
      * <code>false</code> if failed
      */
     public ArrayList<Recipe> SaveRecipes(String recipe_string) throws ParseException {
+        recipe_string.replace("\n", "");
         ArrayList<Recipe> recipes = new ArrayList<>();
         JSONParser jsonParser = new JSONParser();
         JSONArray recipes_array = (JSONArray) jsonParser.parse(recipe_string);
@@ -102,9 +103,9 @@ public class FinderRepository {
         return recipes;
     }
 
-    public Pack Find(String recipe_string, String item_strings) throws ParseException {
-        ArrayList<Recipe> recipes = SaveRecipes(recipe_string);
-        ArrayList<Item> items = SaveItems(item_strings);
+    public Pack Find(JSONObject jsonObject) throws ParseException {
+        ArrayList<Recipe> recipes = SaveRecipes((String) jsonObject.get("recipes"));
+        ArrayList<Item> items = SaveItems((String) jsonObject.get("items_in_fridge"));
         Collections.sort(items);
         System.out.println(recipes);
         System.out.println(items);

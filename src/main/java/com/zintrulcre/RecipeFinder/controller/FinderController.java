@@ -2,6 +2,7 @@ package com.zintrulcre.RecipeFinder.controller;
 
 import com.zintrulcre.RecipeFinder.domain.*;
 import com.zintrulcre.RecipeFinder.repository.FinderRepository;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -29,42 +30,13 @@ public class FinderController {
     }
 
     @PostMapping("/recipe-finder/query")
-    public String Save(@RequestBody String string) throws ParseException {
-        int divide = string.indexOf("\n\n");
-        String recipe_string = string.substring(0, divide + 1);
-        String fridge_string = string.substring(divide + 2);
-        Pack pack = this.finderRepository.Find(recipe_string, fridge_string);
+    public String Save(@RequestBody JSONObject jsonObject) throws ParseException {
+        System.out.println(jsonObject);
+        Pack pack = this.finderRepository.Find(jsonObject);
         String recipe = Match(pack);
         if (!recipe.equals(""))
             return recipe;
         return "Order Takeout";
-    }
-
-    private boolean CompareDate(Item item, String[] dates) {
-        if (item.getYear() < Integer.parseInt(dates[2]))
-            return false;
-        if (item.getMonth() < Integer.parseInt(dates[1]))
-            return false;
-        if (item.getDay() < Integer.parseInt(dates[0]))
-            return false;
-        return true;
-    }
-
-
-    private String CheckAvailability(ArrayList<Recipe> recipes, HashMap<String, Integer> item_map) {
-        for (Recipe recipe : recipes) {
-            boolean flag = true;
-            for (Ingredient ingredient : recipe.getIngredients()) {
-                boolean storage = item_map.containsKey(ingredient.getItem());
-                if (!storage || ingredient.getAmount() > item_map.get(ingredient.getItem())) {
-                    flag = false;
-                    break;
-                }
-            }
-            if (flag)
-                return recipe.getName();
-        }
-        return "";
     }
 
     private String Match(Pack pack) {
@@ -87,4 +59,32 @@ public class FinderController {
         }
         return "";
     }
+
+    private String CheckAvailability(ArrayList<Recipe> recipes, HashMap<String, Integer> item_map) {
+        for (Recipe recipe : recipes) {
+            boolean flag = true;
+            for (Ingredient ingredient : recipe.getIngredients()) {
+                boolean storage = item_map.containsKey(ingredient.getItem());
+                if (!storage || ingredient.getAmount() > item_map.get(ingredient.getItem())) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag)
+                return recipe.getName();
+        }
+        return "";
+    }
+
+    private boolean CompareDate(Item item, String[] dates) {
+        if (item.getYear() < Integer.parseInt(dates[2]))
+            return false;
+        if (item.getMonth() < Integer.parseInt(dates[1]))
+            return false;
+        if (item.getDay() < Integer.parseInt(dates[0]))
+            return false;
+        return true;
+    }
+
+
 }
