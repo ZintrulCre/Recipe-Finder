@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Recipe Finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Recipe Finder</a>
+    </nav>
+
+    <!-- Main -->
+    <div class="main-area">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            1. Please fill in a CSV File:
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <textarea id="content-csv" class="form-control" rows="5"></textarea>
+                    <small class="form-text">Format: item, amount, unit, use-by.</small>
+                    <small class="form-text text-muted">
+                        e.g.<br>
+                        bread,10,slices,25/12/2014<br>
+                        cheese,10,slices,25/12/2014<br>
+                        butter,250,grams,25/12/2014<br>
+                        peanut butter,250,grams,2/12/2014<br>
+                        mixed salad,150,grams,26/12/2013<br>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. Please fill out your recipe JSON:
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <textarea id="content-json" class="form-control" rows="10"></textarea>
+                    <small class="form-text text-muted">
+                        e.g.<br>
+                        <pre>
+    [
+        {
+        "name": "grilled cheese on toast",
+        "ingredients": [
+            { "item":"bread", "amount":"2", "unit":"slices"},
+            { "item":"cheese", "amount":"2", "unit":"slices"}
+        ]
+        },
+        {
+        "name": "salad sandwich",
+        "ingredients": [
+            { "item":"bread", "amount":"2", "unit":"slices"},
+            { "item":"mixed salad", "amount":"100", "unit":"grams"}
+        ]
+        }
+    ]
+                                </pre>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        3. Result
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div id="result">
+                        <span style="color: #f00">No result</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+    </div>
+
+    <!-- JS ============================================ -->
+    <script src="lib/js/jquery-3.3.1.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

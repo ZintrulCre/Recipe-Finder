@@ -1,0 +1,17 @@
+.main-area {
+  width: 60%;
+  margin: 5% auto;
+}
+
+.divider {
+  border: 1px solid #333;
+  margin-bottom: 5%;
+}
+
+#submitBtn {
+  margin-top: 2%;
+}
+
+.btn-link {
+  color: #000;
+}
