@@ -28,7 +28,7 @@ public class FinderController {
         this.finderRepository = finderRepository;
     }
 
-    @PostMapping("/recipe-finder/add")
+    @PostMapping("/recipe-finder/query")
     public String Save(@RequestBody String string) throws ParseException {
         int divide = string.indexOf("\n\n");
         String recipe_string = string.substring(0, divide + 1);

@@ -16,7 +16,7 @@ public class RouterFunctionConfiguration {
 
     @Bean
     public RouterFunction<ServerResponse> FindAllFinder(FinderRepository finderRepository) {
-        return RouterFunctions.route(RequestPredicates.GET("/recipe-finder/add"), request -> {
+        return RouterFunctions.route(RequestPredicates.GET("/recipe-finder/query"), request -> {
             Collection<Finder> finders = finderRepository.FindAllFinders();
             Flux<Finder> finderFlux = Flux.fromIterable(finders);
             return ServerResponse.ok().body(finderFlux, Finder.class);
