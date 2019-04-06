@@ -102,14 +102,14 @@ public class FinderRepository {
         return recipes;
     }
 
-    public boolean Find(String recipe_string, String item_strings) throws ParseException {
+    public Pack Find(String recipe_string, String item_strings) throws ParseException {
         ArrayList<Recipe> recipes = SaveRecipes(recipe_string);
         ArrayList<Item> items = SaveItems(item_strings);
         Collections.sort(items);
         System.out.println(recipes);
         System.out.println(items);
 
-        return false;
+        return new Pack(recipes, items);
     }
 
     public Collection<Finder> FindAllFinders() {
