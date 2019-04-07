@@ -1,0 +1,10 @@
+com/zintrulcre/RecipeFinder/controller/FinderController.class
+com/zintrulcre/RecipeFinder/domain/Recipe.class
+com/zintrulcre/RecipeFinder/domain/Pack.class
+com/zintrulcre/RecipeFinder/domain/Finder.class
+com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.class
+com/zintrulcre/RecipeFinder/RecipeFinderApplication.class
+com/zintrulcre/RecipeFinder/domain/Unit.class
+com/zintrulcre/RecipeFinder/repository/FinderRepository.class
+com/zintrulcre/RecipeFinder/domain/Ingredient.class
+com/zintrulcre/RecipeFinder/domain/Item.class
