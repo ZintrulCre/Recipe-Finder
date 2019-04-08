@@ -12,8 +12,8 @@ $(document).ready(function () {
       'recipes': recipe_obj
     }
 
-    console.log('items_in_fridge:\n', items);
-    console.log('recipes:\n', recipe_obj);
+    // console.log('items_in_fridge:\n', items);
+    // console.log('recipes:\n', recipe_obj);
 
     $.ajax({
       url: 'http://localhost:8080/recipe-finder/query',
@@ -26,7 +26,6 @@ $(document).ready(function () {
     }).done(function (response) {
       console.log(response);
       var result = response.data;
-      console.log(result)
       $('#result').html(result);
     }).fail(function (response) {
       console.log(response.responseText);

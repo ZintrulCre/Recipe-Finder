@@ -4,7 +4,6 @@
     <list default="true" id="17e01659-cf0e-45f7-b3ee-aac3ef79df9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+            <state relative-caret-position="254">
+              <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1803#1820#0" expanded="true" />
@@ -311,7 +310,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554696002143" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554696187652" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -357,12 +356,12 @@
       <workItem from="1554592300060" duration="353000" />
       <workItem from="1554593011315" duration="2364000" />
       <workItem from="1554680835685" duration="248000" />
-      <workItem from="1554682820551" duration="8812000" />
+      <workItem from="1554682820551" duration="8951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44371000" />
+    <option name="totallyTimeSpent" value="44510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -791,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+        <state relative-caret-position="254">
+          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1803#1820#0" expanded="true" />

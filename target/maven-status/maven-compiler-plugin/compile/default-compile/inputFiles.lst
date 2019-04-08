@@ -4,7 +4,9 @@
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/domain/Pack.java
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/domain/Ingredient.java
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.java
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/domain/ReceiveObject.java
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/RecipeFinderApplication.java
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/domain/Recipe.java
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/domain/Item.java
 /Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/domain/Finder.java
+/Users/zhengyuchen/Google-Drive/Sync/Repository/Recipe-Finder/src/main/java/com/zintrulcre/RecipeFinder/config/CorsConfiguration.java
