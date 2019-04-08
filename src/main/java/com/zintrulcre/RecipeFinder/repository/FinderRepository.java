@@ -87,15 +87,12 @@ public class FinderRepository {
     /**
      * save Recipe objects
      *
-     * @param recipe_string {@link Recipe} object
+     * @param recipes_array {@link Recipe} object
      * @return <code>true</code> if succeed
      * <code>false</code> if failed
      */
-    public ArrayList<Recipe> SaveRecipes(String recipe_string) throws ParseException {
-        recipe_string.replace("\n", "");
+    public ArrayList<Recipe> SaveRecipes(JSONArray recipes_array) throws ParseException {
         ArrayList<Recipe> recipes = new ArrayList<>();
-        JSONParser jsonParser = new JSONParser();
-        JSONArray recipes_array = (JSONArray) jsonParser.parse(recipe_string);
         for (int i = 0; i < recipes_array.size(); ++i) {
             JSONObject recipe_object = (JSONObject) (recipes_array.get(i));
             recipes.add(ParseRecipeObject(recipe_object));
@@ -104,7 +101,7 @@ public class FinderRepository {
     }
 
     public Pack Find(JSONObject jsonObject) throws ParseException {
-        ArrayList<Recipe> recipes = SaveRecipes((String) jsonObject.get("recipes"));
+        ArrayList<Recipe> recipes = SaveRecipes((JSONArray)jsonObject.get("recipes"));
         ArrayList<Item> items = SaveItems((String) jsonObject.get("items_in_fridge"));
         Collections.sort(items);
         System.out.println(recipes);

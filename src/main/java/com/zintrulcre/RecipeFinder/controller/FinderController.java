@@ -2,7 +2,9 @@ package com.zintrulcre.RecipeFinder.controller;
 
 import com.zintrulcre.RecipeFinder.domain.*;
 import com.zintrulcre.RecipeFinder.repository.FinderRepository;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -29,9 +31,13 @@ public class FinderController {
         this.finderRepository = finderRepository;
     }
 
-    @PostMapping("/recipe-finder/query")
-    public String Save(@RequestBody JSONObject jsonObject) throws ParseException {
-        System.out.println(jsonObject);
+    @PostMapping(value = "/recipe-finder/query", consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = {"application/json; charset=UTF-8"})
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    public String Save(@RequestBody String jsonString) throws ParseException {
+        System.out.println(jsonString);
+        JSONParser jsonParser = new JSONParser();
+        JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
         Pack pack = this.finderRepository.Find(jsonObject);
         String recipe = Match(pack);
         if (!recipe.equals(""))

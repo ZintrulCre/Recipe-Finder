@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="17e01659-cf0e-45f7-b3ee-aac3ef79df9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/FinderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/FinderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zintrulcre/RecipeFinder/controller/FinderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zintrulcre/RecipeFinder/controller/FinderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zintrulcre/RecipeFinder/repository/FinderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zintrulcre/RecipeFinder/repository/FinderRepository.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +23,65 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="98">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1803#1820#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/json-simple-1.1.1.jar!/org/json/simple/JSONObject.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
+              <folding>
+                <element signature="e#2634#2635#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/ReceiveObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <folding>
+                <element signature="e#158#159#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/CorsConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/FinderRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,20 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/RecipeFinderApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/FinderRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="145">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -64,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="149">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,6 +152,8 @@
       <find>direc</find>
       <find>dependency</find>
       <find>build</find>
+      <find>dependenc</find>
+      <find>parse</find>
     </findStrings>
     <replaceStrings>
       <replace>Recipe</replace>
@@ -114,7 +166,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/ItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/RecipeFinderApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/Unit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/RecipeRepository.java" />
@@ -126,12 +177,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/Finder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/Pack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/ReceiveJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/FinderRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/GlobalCrossConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/GlobalCorsConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/WebMvcConfigurer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/CORSConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/RecipeFinderApplication.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/CorsFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/CorsConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/ReceiveObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java" />
       </list>
     </option>
   </component>
@@ -193,11 +253,55 @@
             <path>
               <item name="Recipe-Finder" type="b2602c69:ProjectViewProjectNode" />
               <item name="Recipe-Finder" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Recipe-Finder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Recipe-Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recipe-Finder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recipe-Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recipe-Finder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recipe-Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="RecipeFinder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recipe-Finder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recipe-Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="RecipeFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recipe-Finder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recipe-Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="RecipeFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recipe-Finder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recipe-Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="RecipeFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,7 +316,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554597304849" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554694949109" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -258,17 +362,18 @@
       <workItem from="1554592300060" duration="353000" />
       <workItem from="1554593011315" duration="2364000" />
       <workItem from="1554680835685" duration="248000" />
-      <workItem from="1554682820551" duration="386000" />
+      <workItem from="1554682820551" duration="7811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35945000" />
+    <option name="totallyTimeSpent" value="43370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Web" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14749734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -276,24 +381,25 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32970297" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3009901" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32970297" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32970297" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32970297" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32970297" />
+      <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.32970297" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32970297" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32970297" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.3009901" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32970297" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32970297" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32970297" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32970297" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.26144835" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.26144835" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -340,12 +446,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java</url>
-          <line>33</line>
+          <line>37</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>recipe</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zintrulcre/RecipeFinder/RecipeFinderApplicationTests.java">
@@ -560,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/RecipeFinderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/Finder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -580,37 +688,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/RouterFunctionConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="149">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/WebMvcConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/RecipeFinderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        <state relative-caret-position="557">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/FinderRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
+        <state relative-caret-position="261">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="86">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/config/CorsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/ResponseBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/domain/ReceiveObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/json-simple-1.1.1.jar!/org/json/simple/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="e#2634#2635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/repository/FinderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zintrulcre/RecipeFinder/controller/FinderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1803#1820#0" expanded="true" />
           </folding>
         </state>
       </provider>
