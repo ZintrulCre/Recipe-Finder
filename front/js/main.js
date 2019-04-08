@@ -11,11 +11,9 @@ $(document).ready(function () {
       'items_in_fridge': items,
       'recipes': recipe_obj
     }
-    // data = JSON.stringify(params, undefined, 4)
 
     console.log('items_in_fridge:\n', items);
     console.log('recipes:\n', recipe_obj);
-    console.log('params:\n', params);
 
     $.ajax({
       url: 'http://localhost:8080/recipe-finder/query',
@@ -25,11 +23,13 @@ $(document).ready(function () {
         'charset': 'utf-8'
       },
       data: JSON.stringify(params)
-    }).success(function (response) {
+    }).done(function (response) {
       console.log(response);
       var result = response.data;
+      console.log(result)
       $('#result').html(result);
     }).fail(function (response) {
+      console.log(response.responseText);
       var result = 'Server Error!';
       $('#result').html(result);
       alert(result);

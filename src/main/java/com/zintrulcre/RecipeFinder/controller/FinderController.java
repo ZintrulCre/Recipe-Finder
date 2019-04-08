@@ -40,9 +40,10 @@ public class FinderController {
         JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
         Pack pack = this.finderRepository.Find(jsonObject);
         String recipe = Match(pack);
-        if (!recipe.equals(""))
-            return recipe;
-        return "Order Takeout";
+        String res = !recipe.equals("") ? recipe:"Order Takeout";
+        JSONObject retObject = new JSONObject();
+        retObject.put("data", res);
+        return retObject.toJSONString();
     }
 
     private String Match(Pack pack) {
