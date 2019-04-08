@@ -6,54 +6,10 @@
 ## Introduction
 
 - Input
-
     - items in fridge
-    - format: item, amount, unit, use-by, e.g.
-
-```
-bread,10,slices,25/12/2019
-cheese,10,slices,25/12/2019
-butter,250,grams,25/12/2018
-peanut butter,250,grams,8/2/2019
-mixed salad,150,grams,26/12/2016
-```
-
-    - recipes in json format, e.g.
-
-```
-[
-    {
-        "name": "grilled cheese on toast",
-        "ingredients": [
-            {
-                "item": "bread",
-                "amount": "2",
-                "unit": "slices"
-            },
-            {
-                "item": "cheese",
-                "amount": "2",
-                "unit": "slices"
-            }
-        ]
-    },
-    {
-        "name": "salad sandwich",
-        "ingredients": [
-            {
-                "item": "bread",
-                "amount": "2",
-                "unit": "slices"
-            },
-            {
-                "item": "mixed salad",
-                "amount": "100",
-                "unit": "grams"
-            }
-        ]
-    }
-]
-```
+    - recipes in json format
+- Output
+    - recommendation for what to cook
 
 ## Implementation
 
@@ -72,4 +28,3 @@ mixed salad,150,grams,26/12/2016
     - Google Cloud Platform
         - Nginx
     - Travis CI
-    - Jenkins
