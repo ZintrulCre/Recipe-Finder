@@ -16,7 +16,7 @@ $(document).ready(function () {
     // console.log('recipes:\n', recipe_obj);
 
     $.ajax({
-      url: 'http://35.197.185.63/:8080/recipe-finder/query',
+      url: 'http://35.197.185.63:1114/recipe-finder/query',
       type: 'POST',
       headers: {
         'Content-Type': 'application/json',
