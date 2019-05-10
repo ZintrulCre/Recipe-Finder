@@ -1,8 +1,6 @@
 # Recipe Finder
 [![Build Status](https://travis-ci.com/ZintrulCre/Recipe-Finder.svg?branch=master)](https://travis-ci.com/ZintrulCre/Recipe-Finder)
 
-- http://35.197.185.63/
-
 ## Introduction
 
 - Input
